@@ -1,8 +1,3 @@
-//JUGADORES:
-// NO MODIFICAR LOS NOMBRES DE ESTOS OBJETOS
-// (El test automático les cambia los valores para probar que el resto
-// de la lógica funcione bien)
-
 const jugadorUno = {
   nombre: "Marce",
   habilidades: {
@@ -27,24 +22,14 @@ const jugadorDos = {
 
 //-----------------------------------------------------------------------//
 
-//PUNTOS INICIALES DEL JUEGO:
-//Estas variables servirán para almacenar los puntos ganados por cada jugador.
-//Cada vez que un jugador gana en una habilidad determinada se deberá
-//sumar 1 punto en el contador correspondiente:
 var contadorPuntosJug1 = 0;
 var contadorPuntosJug2 = 0;
 
-//Ganador:
 var ganador;
 
 //-----------------------------------------------------------------------//
 
 //COMPARACIÓN POR PODER DE ATAQUE
-
-//La indicación ++ luego de la variable contadorPuntosJug suma 1 punto al
-//contador. Según la condición que se cumpla, se irán sumando los puntos.
-
-// (Escribir debajo el código que te permita generar esta comparación)
 
 if (jugadorUno.habilidades.ataque > jugadorDos.habilidades.ataque) {
   contadorPuntosJug1++;
@@ -56,7 +41,6 @@ if (jugadorUno.habilidades.ataque > jugadorDos.habilidades.ataque) {
 }
 
 //COMPARACIÓN POR VELOCIDAD:
-//(Escribir debajo el código que te permita generar esta comparación)
 
 if (jugadorUno.habilidades.velocidad > jugadorDos.habilidades.velocidad) {
   contadorPuntosJug1++;
@@ -70,7 +54,6 @@ if (jugadorUno.habilidades.velocidad > jugadorDos.habilidades.velocidad) {
 }
 
 //COMPARACIÓN POR NIVEL DE VIDA:
-//(Escribir debajo el código que te permita generar esta comparación)
 
 if (jugadorUno.habilidades.vida > jugadorDos.habilidades.vida) {
   contadorPuntosJug1++;
@@ -82,7 +65,6 @@ if (jugadorUno.habilidades.vida > jugadorDos.habilidades.vida) {
 }
 
 //COMPARACIÓN POR MAGIA:
-//(Escribir debajo el código que te permita generar esta comparación)
 
 if (jugadorUno.habilidades.magia > jugadorDos.habilidades.magia) {
   contadorPuntosJug1++;
@@ -94,7 +76,6 @@ if (jugadorUno.habilidades.magia > jugadorDos.habilidades.magia) {
 }
 
 //COMPARACIÓN POR CANTIDAD DE ARTÍCULOS
-//(Escribir debajo el código que te permita generar esta comparación)
 
 if (jugadorUno.articulos.length > jugadorDos.articulos.length) {
   contadorPuntosJug1++;
@@ -106,8 +87,6 @@ if (jugadorUno.articulos.length > jugadorDos.articulos.length) {
 }
 
 //DEFINIENDO EL GANADOR DE LA PARTIDA
-//En este espacio deberás generar la comparación final de puntos
-//que determine al ganador. Mostrar en la terminal el nombre del jugador que ganó la partida
 
 if (contadorPuntosJug1 > contadorPuntosJug2) {
   ganador = jugadorUno.nombre;
